@@ -3,6 +3,5 @@
  */
 export interface ICarOnSaleClient {
 
-    getRunningAuctions(): Promise<any /* TODO: Introduce a type */>
-
+    getRunningAuctions(): object   //Promise<any /* TODO: Introduce a type */>
 }

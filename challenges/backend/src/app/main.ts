@@ -27,4 +27,7 @@ const app = container.resolve(AuctionMonitorApp);
  */
 (async () => {
     await app.start();
+    process.on('exit', (code) => {
+        console.log(`Exit with code: ${code}`);
+      });      
 })();
